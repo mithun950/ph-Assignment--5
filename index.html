@@ -10,46 +10,49 @@
     
 </head>
 <body>
-    <header class="sticky top-0 z-10 backdrop-blur-lg pb-3">
-    <!--navbar start  -->
-    <nav class=" bg-[#F9F7F3] py-4">
-        <div class="flex justify-around gap-5 items-center mt-3 mb-4 w-full mx-auto">
-     <div>
-        <button id="blog" class="btn bg-[#B4F461] px-8 font-bold">Blog</button>
+    <header class="sticky top-0 z-10 backdrop-blur-sm pb-3">
+    
+      <!--navbar start  -->
+    <nav class="bg-opacity-60 backdrop-blur-sm bg-[#F9F7F3] py-4">
+        
+      <div class="w-11/12 lg:10/12 flex justify-around gap-2 items-center mt-3 mb-4  mx-auto">
+     
+        <div>
+        <button id="blog" class="btn bg-[#B4F461] lg:px-8 font-bold">Blog</button>
      </div>  
-     <div class=" max-sm: hidden sm:flex items-center gap-1 ">
-       <img src=".assets/logo.png" alt="">
-       <p class="text-xl font-bold">Donate Bangladesh</p> 
+     <div class="flex items-center text-center gap-1 ">
+       <img class="w-6 lg:w-13" src="./assets/logo.png" alt="">
+       <p class="text-sm lg:text-xl font-bold">Donate Bangladesh</p> 
      </div> 
-     <div class="flex gap-1">
+     <div class="flex items-center gap-1 lg:gap-3">
         <img src="./assets/coin.png" alt="">
-        <p><span id="your-amount" class="font-bold">5500 </span>BDT</p>
+        <div><span id="your-amount" class="font-bold">5500 </span>BDT</div>
      </div>
     </div>
     </nav>
     <!-- navbar end -->
 
     <!-- button area start -->
-     <div class=' text-center mt-6 gap-3'>
-     <button id="donation-tab" class="btn px-7 bg-[#B4F461] mr-2  font-bold ">Donation</button>
-     <button id="history-tab" class=" btn px-8 font-bold ml-2">History</button>
+     <div class='flex justify-center text-center mt-6 gap-1 lg:gap-2'>
+     <button id="donation-tab" class="btn px-3 lg:px-7 bg-[#B4F461] mr-2  font-bold ">Donation</button>
+     <button id="history-tab" class=" btn px-4 lg:px-8 font-bold ml-2">History</button>
     </div>
      <!--button area end  -->
     </header>
       <!-- header section end -->
        
      <!-- noakhali flood donate card start  -->
-     <div id="noakhali-donate-card" class="hero  border-2 rounded-md w-10/12 mx-auto mt-10">
+     <div id="noakhali-donate-card" class="hero  border-2 rounded-lg w-10/12 mx-auto mt-10">
         <div class="hero-content flex-col lg:flex-row justify-between">
           <img
             src="./assets/noakhali.png"
             class="w-full rounded-lg shadow-2xl" />
           <div>
 
-            <div class=" w-4/12  py-3 px-1 rounded-lg mt-2 mb-2  bg-[#1111110D] flex gap-1 font-semibold justify-center">
+            <div class=" item-center p-3 px-4 px-1 rounded-lg mt-2 mb-2  bg-[#1111110D] inline-flex gap-1 font-semibold justify-center">
              
                 <img class="w-3/11" src="./assets/coin.png" >
-                <p><span id="noakhali-donate-amount">0</span> BDT</p>
+                <div><span id="noakhali-donate-amount">0</span> BDT</div>
 
 
             </div>
@@ -65,12 +68,12 @@
              
              <!-- use modal -->
              <dialog id="my_modal_4" class="modal">
-              <div class="modal-box w-5/12 max-w-5xl">
+              <div class="modal-box">
                 <h3 class="text-3xl font-bold text-center">Congrates!</h3>
                 <img class="mx-auto mt-2 " src="./assets/coin.png" alt="">
                 <p class="py-4 text-center">You Have Donated For Humankind</p>
                 <h4 class="text-center mt-2 font-bold">Successfully</h4>
-                <div class="modal-action">
+                <div class="modal-action mx-auto flex justify-center">
                   <form method="dialog">
                     <!-- if there is a button, it will close the modal -->
                     <button class="btn ">Close confirmation  </button>
@@ -91,7 +94,7 @@
             class="w-full rounded-lg shadow-2xl" />
           <div>
               
-            <div class="bg-[#1111110D] flex gap-1 font-semibold w-4/12 py-3 px-1 rounded-lg mt-2 mb-2 justify-center">
+            <div class="item-center p-3 px-4 px-1 rounded-lg mt-2 mb-2  bg-[#1111110D] inline-flex gap-1 font-semibold justify-center">
              
                 <img class="w-3/11" src="./assets/coin.png" >
                 <p><span id="feni-donate-amount">600</span> BDT</p>
@@ -119,7 +122,7 @@
             class="w-full rounded-lg shadow-2xl" />
           <div>
               
-            <div class="bg-[#1111110D] flex gap-1 font-semibold w-4/12 py-3 px-1 rounded-lg mt-2 mb-2 justify-center">
+            <div class=" item-center p-3 px-4 px-1 rounded-lg mt-2 mb-2  bg-[#1111110D] inline-flex gap-1 font-semibold justify-center">
              
                 <img class="w-3/11" src="./assets/coin.png" >
                 <p><span id="quota-donate-amount">2400</span> BDT</p>
