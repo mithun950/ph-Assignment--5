@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q&A</title>
+    <!-- daisyUI cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!--header section start  -->
+    <header>
+        <!-- nav start -->
+        <nav class=" bg-[#F9F7F3] py-4">
+            <div class="flex justify-around gap-5 items-center mt-3 mb-4 w-full mx-auto">
+         <!-- home-btn -->
+          <div>
+            <button id="home" class="btn bg-[#B4F461] px-8 font-bold">Home</button>
+          </div>
+         <div class=" max-sm: hidden sm:flex items-center gap-1 ">
+           <img src="./assets/logo.png" alt="">
+           <p class="text-xl font-semibold">Donate Bangladesh</p> 
+         </div> 
+         <div class="flex gap-1">
+            <img src="./assets/coin.png" alt="">
+            <p><span id="your-amount" class="font-bold">5500 </span>BDT</p>
+         </div>
+        </div>
+        </nav>
+         <!-- nav end -->
+    </header>
+    <!-- header section end  -->
+
+    <!-- faq start -->
+     <section class="w-10/12 mx-auto my-10">
+        <div class="flex items-center gap-3 mb-8">
+            <div>
+                <p class="text-4xl font-bold">Important FAQ</p>
+            </div>
+            <div>
+                <img class="w-12" src="./assets/question.png" alt="">
+            </div>
+        </div>
+
+     
+    <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border mt-2">
+        <div class="collapse-title text-xl font-medium">What is the Document Object Model?</div>
+        <div class="collapse-content">
+          <p>The DOM (Document Object Model) is a programming interface that represents the structure of an HTML or XML document as a tree of objects. It allows programs like JavaScript to manipulate, access, and update the content, structure, and style of a web page dynamically. Each element, attribute, and text within the HTML is represented as a node in this tree, making it possible to interact with the page programmatically.</p>
+        </div>
+      </div>
+
+      <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border mt-2">
+        <div class="collapse-title text-xl font-medium">How do you select an element from the (DOM)?</div>
+        <div class="collapse-content">
+          <p>
+            To select an element from the DOM, you can use several JavaScript methods, depending on how you want to target the element (by id, class, tag name, or other selectors)</p>
+        </div>
+      </div>
+
+      <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border mt-2">
+        <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM and why is it usefull?</div>
+        <div class="collapse-content">
+          <p>
+            Event delegation is a technique in JavaScript where a single event listener is added to a parent element to manage events for all its child elements, rather than adding separate event listeners to each child element. This works because of event bubbling, where events triggered on child elements bubble up through their parent elements</p>
+        </div>
+      </div>
+
+      <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border mt-2">
+        <div class="collapse-title text-xl font-medium">How do you multiple an elements attributes and style using the DOM?</div>
+        <div class="collapse-content">
+          <p>To manipulate an element's attributes and style using the DOM, you can use JavaScript to directly access and modify the attributes and CSS properties of the element.</p>
+        </div>
+      </div>
+    </section>
+     <!-- faq end -->
+      <!-- footer section start -->
+    <footer class="h-28 mt-10 bg-[#faf8f4]">
+      
+    </footer>
+    <!-- footer  section end -->
+
+     <script src="index.js"></script>
+</body>
+</html>
